@@ -1,0 +1,84 @@
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(127, 255, 212, 0.58);
+}
+
+.trasa {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(0, 0, 255, 0.43);
+}
+
+.maly {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+
+.prawy {
+    top: 50px;
+    right: 50px;
+}
+
+.lewy {
+    bottom: 50px;
+    left: 50px;
+}
+
+.container:hover > .maly.lewy {
+    animation: obrot_lewy 5s infinite;
+}
+
+.container:hover > .maly.prawy {
+    animation: obrot_prawy 5s infinite;
+}
+
+@keyframes obrot_lewy {
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    
+    25% {
+        transform: translate(90px, 0px) scale(1.5) rotate(45deg);
+    }
+    
+    50% {
+        transform: translate(90px, -90px) scale(1) rotate(90deg);
+    }
+    
+    75% {
+        transform: translate(0, -90px) scale(1.5) rotate(135deg);
+    }
+    
+    100% {
+        transform: translate(0, 0px) scale(1) rotate(180deg);
+    }
+}
+
+@keyframes obrot_prawy {
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    
+    25% {
+        transform: translate(-90px, 0px) scale(1.5) rotate(45deg);
+    }
+    
+    50% {
+        transform: translate(-90px, 90px) scale(1) rotate(90deg);
+    }
+    
+    75% {
+        transform: translate(0, 90px) scale(1.5) rotate(135deg);
+    }
+    
+    100% {
+        transform: translate(0, 0px) scale(1) rotate(180deg);
+    }
+}
