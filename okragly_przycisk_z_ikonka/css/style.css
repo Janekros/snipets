@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container a {
+    display: inline-block;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 50px;
+    background-color: aqua;
+    color: white;
+    transition: all 1s;
+}
+
+.container a:hover {
+    color:aqua;
+    background-color: white;
+    border-color: aqua;
+}

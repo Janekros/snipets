@@ -27,12 +27,12 @@
 /* Sposób drugi */
 
 .example2.out {
-    
+    position: relative;
 }
 
-.example2.out {
-    padding: 5px;
-    box-sizing: border-box;
+.example2.in {
+    position: absolute;
+    transform: translate(50%, 50%)
 }
 
 /* Sposób trzeci */
