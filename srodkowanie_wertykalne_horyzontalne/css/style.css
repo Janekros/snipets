@@ -1,0 +1,44 @@
+.out {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 50px;
+}
+
+.in {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
+}
+
+/* Sposób pierwszy */
+
+.example1.in {
+    left: 25%;
+    top: 25%;
+    position: absolute;
+}
+
+.example1.out {
+    position: relative;
+}
+
+/* Sposób drugi */
+
+.example2.out {
+    
+}
+
+.example2.out {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Sposób trzeci */
+
+.example3.out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
