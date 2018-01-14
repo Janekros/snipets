@@ -1,0 +1,7 @@
+input {
+    background-color: blue;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
