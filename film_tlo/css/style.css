@@ -1,0 +1,12 @@
+#video-wrapper video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#video-wrapper {
+}
+
+body {
+    margin: 0;
+}
