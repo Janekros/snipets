@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+}
+
+.niebieski,
+.czerwony {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.niebieski {
+    background-color: blue;
+    transition: all 3s;
+    transform: rotateY(180deg);
+}
+
+.czerwony {
+    background-color: red;
+    transition: all 3s;
+    backface-visibility: hidden;
+}
+
+.container:hover>.czerwony {
+    transform: rotateY(180deg);
+    
+}
+
+.container:hover>.niebieski {
+    transform: rotateY(0deg);
+}
