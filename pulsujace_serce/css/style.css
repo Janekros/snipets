@@ -1,0 +1,22 @@
+div {
+    text-align: center;
+}
+
+.serce {
+    color: red;
+    animation-name: serce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes serce {
+    0%, 100% {
+        transform: scale(1)
+    }
+    
+    50% {
+        transform: scale(1.5)
+    }
+}
+
