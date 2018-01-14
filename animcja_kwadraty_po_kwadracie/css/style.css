@@ -10,7 +10,8 @@
     height: 100px;
     top: 50%;
     left: 50%;
-    background-color: rgba(0, 0, 255, 0.43);
+    background-color: rgba(127, 255, 212, 0.58));
+    box-sizing: content-box;
 }
 
 .maly {
@@ -30,11 +31,11 @@
     left: 0px;
 }
 
-.trasa:hover > .maly.lewy {
+.maly.lewy {
     animation: obrot_lewy 5s infinite;
 }
 
-.trasa:hover > .maly.prawy {
+.maly.prawy {
     animation: obrot_prawy 5s infinite;
 }
 
